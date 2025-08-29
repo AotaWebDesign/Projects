@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bella Moda | Moda Feminina</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+   
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <a href="#" class="logo">
+                    <i class="fas fa-tshirt"></i>
+                    Bella<span>Moda</span>
+                </a>
+                
+                <div class="mobile-menu-btn">
+                    <i class="fas fa-bars"></i>
+                </div>
+                
+                <nav>
+                    <ul>
+                        <li><a href="#" class="active">Início</a></li>
+                        <li><a href="#products">Peças</a></li>
+                        <li><a href="#about">Sobre</a></li>
+                        <li><a href="#contact">Contato</a></li>
+                    </ul>
+                </nav>
+                
+                <div class="header-actions">
+                    <div class="search-box">
+                        <i class="fas fa-search"></i>
+                        <input type="text" placeholder="Buscar..." id="navSearch">
+                    </div>
+                    
+                    <div class="header-icons">
+                    <!-- Na navbar do seu site principal -->
+      <a href=""><i class="fas fa-user"></i></a>
+                        <a href="#cart"><i class="fas fa-shopping-cart"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section com Imagem Diagonal -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>Moda que <span>valoriza</span> sua beleza única</h1>
+                    <p>Descubra peças exclusivas que combinam estilo, conforto e elegância para todos os momentos.</p>
+                    <a href="#products" class="btn">Ver Coleção</a>
+                </div>
+                
+                <div class="hero-image">
+                    <img src="https://images.unsplash.com/photo-1525299374597-911581e1bdef?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Coleção Bella Moda">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Nova Seção: Sobre a Bella Moda -->
+    <section class="about-preview">
+        <div class="container">
+            <h2>Sobre a Bella Moda</h2>
+            <p>Há mais de 10 anos no mercado da moda feminina, oferecemos peças únicas que combinam estilo, qualidade e preço justo.</p>
+            
+            <div class="features">
+                <div class="feature">
+                    <div class="feature-icon">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h3>Qualidade Premium</h3>
+                    <p>Produtos selecionados com os melhores materiais e acabamentos</p>
+                </div>
+                
+                <div class="feature">
+                    <div class="feature-icon">
+                        <i class="fas fa-truck"></i>
+                    </div>
+                    <h3>Entrega Rápida</h3>
+                    <p>Entregas em todo Brasil com agilidade e segurança</p>
+                </div>
+                
+                <div class="feature">
+                    <div class="feature-icon">
+                        <i class="fas fa-credit-card"></i>
+                    </div>
+                    <h3>Pagamento Flexível</h3>
+                    <p>Diversas formas de pagamento para sua comodidade</p>
+                </div>
+                
+                <div class="feature">
+                    <div class="feature-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h3>Atendimento Exclusivo</h3>
+                    <p>Suporte personalizado para todas as suas dúvidas</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products">
+        <div class="container">
+            <div class="section-title">
+                <h2>Nossas Peças</h2>
+            </div>
+            
+            <div class="filters">
+                <div class="filter-group">
+                    <label for="size">Tamanho:</label>
+                    <select id="size">
+                        <option value="all">Todos</option>
+                        <option value="pp">PP</option>
+                        <option value="p">P</option>
+                        <option value="m">M</option>
+                        <option value="g">G</option>
+                        <option value="gg">GG</option>
+                    </select>
+                </div>
+                
+                <div class="filter-group">
+                    <label for="price">Preço:</label>
+                    <select id="price">
+                        <option value="all">Todos</option>
+                        <option value="0-50">Até R$ 50</option>
+                        <option value="50-100">R$ 50 - R$ 100</option>
+                        <option value="100-200">R$ 100 - R$ 200</option>
+                        <option value="200+">Acima de R$ 200</option>
+                    </select>
+                </div>
+                
+                <div class="filter-group">
+                    <label for="category">Categoria:</label>
+                    <select id="category">
+                        <option value="all">Todas</option>
+                        <option value="dresses">Vestidos</option>
+                        <option value="blouses">Blusas</option>
+                        <option value="pants">Calças</option>
+                        <option value="skirts">Saias</option>
+                    </select>
+                </div>
+            </div>
+            
+            <div class="products-grid">
+                <!-- Product 1 -->
+                <div class="product-card" data-size="m" data-price="189.90" data-category="dresses" data-name="Vestido Floral Elegante">
+                    <div class="product-badge">NOVO</div>
+                    <div class="product-img">
+                        <img src="https://images.unsplash.com/photo-1595777457583-95e059d581b8?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Vestido Floral Elegante">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Vestido Floral Elegante</h3>
+                        <p class="product-desc">Vestido midi com estampa floral e detalhes em renda.</p>
+                        <p class="product-price">R$ 189,90 <span class="old-price">R$ 219,90</span></p>
+                        <div class="product-actions">
+                            <a href="#" class="btn">Detalhes</a>
+                            <a href="https://wa.me/5511999999999?text=Olá! Gostaria de informações sobre o Vestido Floral Elegante" class="btn whatsapp-btn" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Product 2 -->
+                <div class="product-card" data-size="p" data-price="129.90" data-category="blouses" data-name="Blusa de Seda Premium">
+                    <div class="product-img">
+                        <img src="https://images.unsplash.com/photo-1586790170083-2f9ceadc732d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Blusa de Seda Premium">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Blusa de Seda Premium</h3>
+                        <p class="product-desc">Blusa em seda natural com corte moderno e confortável.</p>
+                        <p class="product-price">R$ 129,90</p>
+                        <div class="product-actions">
+                            <a href="#" class="btn">Detalhes</a>
+                            <a href="https://wa.me/5511999999999?text=Olá! Gostaria de informações sobre a Blusa de Seda Premium" class="btn whatsapp-btn" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Product 3 -->
+                <div class="product-card" data-size="g" data-price="219.90" data-category="pants" data-name="Calça Wide Leg Alfaiataria">
+                    <div class="product-badge">DESTAQUE</div>
+                    <div class="product-img">
+                        <img src="https://images.unsplash.com/photo-1542272604-787c3835535d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Calça Wide Leg Alfaiataria">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Calça Wide Leg Alfaiataria</h3>
+                        <p class="product-desc">Calça wide leg em tecido de alta qualidade e caimento perfeito.</p>
+                        <p class="product-price">R$ 219,90</p>
+                        <div class="product-actions">
+                            <a href="#" class="btn">Detalhes</a>
+                            <a href="https://wa.me/5511999999999?text=Olá! Gostaria de informações sobre a Calça Wide Leg Alfaiataria" class="btn whatsapp-btn" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Product 4 -->
+                <div class="product-card" data-size="gg" data-price="159.90" data-category="skirts" data-name="Saia Midi Plissada">
+                    <div class="product-img">
+                        <img src="https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Saia Midi Plissada">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Saia Midi Plissada</h3>
+                        <p class="product-desc">Saia midi com detalhes em plissado e modelagem elegante.</p>
+                        <p class="product-price">R$ 159,90 <span class="old-price">R$ 189,90</span></p>
+                        <div class="product-actions">
+                            <a href="#" class="btn">Detalhes</a>
+                            <a href="https://wa.me/5511999999999?text=Olá! Gostaria de informações sobre a Saia Midi Plissada" class="btn whatsapp-btn" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                        </div>
+                    </div>
+                </div>
+      
+                <div class="product-card" data-size="m" data-price="249.90" data-category="dresses" data-name="Vestido Longo Elegante">
+                    <div class="product-badge">LANÇAMENTO</div>
+                    <div class="product-img">
+                        <img src="https://images.unsplash.com/photo-1515372039744-b8f02a3ae446?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Vestido Longo Elegante">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Vestido Longo Elegante</h3>
+                        <p class="product-desc">Vestido longo em chiffon com detalhes fluídos e românticos.</p>
+                        <p class="product-price">R$ 249,90</p>
+                        <div class="product-actions">
+                            <a href="#" class="btn">Detalhes</a>
+                            <a href="https://wa.me/5511999999999?text=Olá! Gostaria de informações sobre o Vestido Longo Elegante" class="btn whatsapp-btn" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                
+                <div class="product-card" data-size="p" data-price="139.90" data-category="blouses" data-name="Blusa Ampla com Detalhes">
+                    <div class="product-img">
+                        <img src="https://images.unsplash.com/photo-1582142306909-195724d3a58c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Blusa Ampla com Detalhes">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Blusa Ampla com Detalhes</h3>
+                        <p class="product-desc">Blusa ampla com mangas bufantes e detalhes em renda.</p>
+                        <p class="product-price">R$ 139,90</p>
+                        <div class="product-actions">
+                            <a href="#" class="btn">Detalhes</a>
+                            <a href="https://wa.me/5511999999999?text=Olá! Gostaria de informações sobre a Blusa Ampla com Detalhes" class="btn whatsapp-btn" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>Sobre a <span>Bella Moda</span></h2>
+                     <p>Fundada em 2015, a Elegance nasceu do sonho de duas amigas, Maria e Ana, que compartilhavam uma paixão por moda e um desejo de oferecer às mulheres peças que valorizassem sua beleza única. Começamos como um pequeno ateliê no centro da cidade, onde personalizávamos cada peça de acordo com os desejos de nossas clientes.</p>
+                    <p>Com o tempo, percebemos que poderíamos impactar mais mulheres, oferecendo peças que combinassem qualidade, conforto e estilo. Nossa missão sempre foi ajudar mulheres a se sentirem confiantes e poderosas através da moda, sem abrir mão do conforto no dia a dia.</p>
+                    <p>Hoje, temos orgulho de dizer que nossa marca cresceu, mas mantemos os mesmos valores desde o primeiro dia: qualidade excepcional, atendimento personalizado e compromisso com a satisfação de nossas clientes. Cada peça é cuidadosamente selecionada ou criada pensando em diferentes estilos de vida e corpos.</p>
+                    <p>Acreditamos que a moda vai além das tendências - é uma forma de expressão, confiança e autoestima. Nossa equipe está sempre em busca de novidades e inspirações para trazer o melhor para você.</p>
+                    
+                    <div class="about-features">
+                        <div class="feature-item">
+                            <i class="fas fa-star"></i>
+                            <h3>Qualidade Premium</h3>
+                            <p>Produtos selecionados com os melhores materiais e acabamentos</p>
+                        </div>
+                        
+                        <div class="feature-item">
+                            <i class="fas fa-truck"></i>
+                            <h3>Entrega Rápida</h3>
+                            <p>Entregas em todo Brasil com agilidade e segurança</p>
+                        </div>
+                        
+                        <div class="feature-item">
+                            <i class="fas fa-credit-card"></i>
+                            <h3>Pagamento Flexível</h3>
+                            <p>Diversas formas de pagamento para sua comodidade</p>
+                        </div>
+                        
+                        <div class="feature-item">
+                            <i class="fas fa-headset"></i>
+                            <h3>Atendimento Exclusivo</h3>
+                            <p>Suporte personalizado para todas as suas dúvidas</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="about-images">
+                    <div class="about-img-main">
+                        <img src="https://images.unsplash.com/photo-1566206091558-7f218b696731?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Nossa loja física">
+                    </div>
+                    <div class="about-img-secondary">
+                        <img src="https://images.unsplash.com/photo-1592301933927-35b597393c0a?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Equipe Bella Moda">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer id="contact">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>Bella Moda</h3>
+                    <p>Sua loja de moda feminina com peças exclusivas para valorizar sua belleza única.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Links Rápidos</h3>
+                    <ul>
+                        <li><a href="#">Início</a></li>
+                        <li><a href="#products">Peças</a></li>
+                        <li><a href="#about">Sobre Nós</a></li>
+                        <li><a href="#contact">Contato</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Contato</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> Rua da Moda, 123, Centro</p>
+                    <p><i class="fas fa-phone"></i> (11) 99999-9999</p>
+                    <p><i class="fas fa-envelope"></i> contato@bellamoda.com.br</p>
+                    <p><i class="fas fa-clock"></i> Seg a Sáb: 10h às 19h</p>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Newsletter</h3>
+                    <p>Inscreva-se para receber novidades e promoções exclusivas.</p>
+                    <form>
+                        <input type="email" placeholder="Seu e-mail" style="padding: 10px; width: 100%; margin-bottom: 10px; border-radius: 5px; border: none;">
+                        <button type="submit" class="btn" style="width: 100%;">Inscrever</button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2023 Bella Moda - Todos os direitos reservados</p>
+            </div>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/5511999999999?text=Olá! Gostaria de mais informações sobre as peças" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+     <script src="script.js">
+        // Menu Mobile
+      
+    </script>
+</body>
+</html>
